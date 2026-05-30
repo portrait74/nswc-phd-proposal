@@ -33,10 +33,10 @@ Department of Mechanical and Aerospace Engineering
 From the `latex/` directory:
 
 ```bash
-pdflatex volume1_technical.tex
+xelatex volume1_technical.tex
 bibtex volume1_technical
-pdflatex volume1_technical.tex
-pdflatex volume1_technical.tex
+xelatex volume1_technical.tex
+xelatex volume1_technical.tex
 ```
 
 To build Volume II:
@@ -49,7 +49,7 @@ The current machine may need a LaTeX distribution such as TeX Live or MiKTeX ins
 
 ## Volume I Formatting
 
-The BAA limits Volume I, including the SOW, to 30 single-spaced 8.5 by 11-inch pages using 12-point Times New Roman text. The LaTeX source uses `12pt`, `letterpaper`, Times-style fonts, and single spacing. Title pages, tables of contents, lists, tabs, cover sheets, and blank pages are not counted by the BAA, but resumes, appendices, attachments, and the SOW are included in the page limit.
+The BAA limits Volume I, including the SOW, to 30 single-spaced 8.5 by 11-inch pages using 12-point Times New Roman text. The LaTeX source uses `12pt`, `letterpaper`, `fontspec` with `Times New Roman`, and single spacing. Compile Volume I with XeLaTeX or LuaLaTeX rather than pdfLaTeX. Title pages, tables of contents, lists, tabs, cover sheets, and blank pages are not counted by the BAA, but resumes, appendices, attachments, and the SOW are included in the page limit.
 
 ## Korean Translation PDF
 
