@@ -20,7 +20,9 @@ Department of Mechanical and Aerospace Engineering
 - `baa-summary.md` - BAA notes and opportunity summary
 - `proposal-outline.md` - Working concept outline
 - `latex/main.tex` - Main LaTeX proposal draft
+- `latex/volume2_cost.tex` - Volume II cost proposal draft
 - `latex/sections/` - Section-level LaTeX source files
+- `latex/sections-v2/` - Volume II cost proposal section files
 - `latex/references.bib` - Bibliography file
 
 ## Build
@@ -32,6 +34,12 @@ pdflatex main.tex
 bibtex main
 pdflatex main.tex
 pdflatex main.tex
+```
+
+To build Volume II:
+
+```bash
+pdflatex volume2_cost.tex
 ```
 
 The current machine may need a LaTeX distribution such as TeX Live or MiKTeX installed before PDF compilation.
