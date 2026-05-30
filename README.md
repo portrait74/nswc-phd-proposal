@@ -18,6 +18,7 @@ Department of Mechanical and Aerospace Engineering
 ## Structure
 
 - `baa-summary.md` - BAA notes and opportunity summary
+- `docs/NSWC_PHD-26-S-0001_BAA_ko.md` - Korean working translation of the extracted BAA text
 - `proposal-outline.md` - Working concept outline
 - `latex/main.tex` - Combined working LaTeX proposal draft
 - `latex/volume1_technical.tex` - Volume I technical proposal draft
