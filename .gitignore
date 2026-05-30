@@ -1,0 +1,19 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Local editor/system files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Keep generated PDFs out unless explicitly added later
+*.pdf
