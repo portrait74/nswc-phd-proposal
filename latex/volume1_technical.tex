@@ -1,0 +1,63 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue
+}
+
+\setstretch{1.05}
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=3pt}
+\setlist[enumerate]{leftmargin=*, itemsep=2pt, topsep=3pt}
+
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
+\titleformat{\subsubsection}{\normalsize\itshape}{\thesubsubsection.}{0.5em}{}
+
+\title{\textbf{Volume I: Technical Proposal}\\
+Reinforcement Learning-Augmented Multi-Model Predictive Guidance\\for Hypersonic Glide Vehicles}
+\author{
+California State University, Long Beach\\
+Department of Mechanical and Aerospace Engineering
+}
+\date{Draft Technical Proposal for NSWC PHD-26-S-0001 BAA}
+
+\begin{document}
+
+\maketitle
+
+\noindent\textbf{BAA Number:} NSWC PHD-26-S-0001
+
+\noindent\textbf{BAA Topic Area:} Topic 2, Hypersonic \& Suborbital Research and Validation
+
+\noindent\textbf{Proposing Institution:} California State University, Long Beach (CSULB), Department of Mechanical and Aerospace Engineering
+
+\noindent\textbf{Principal Investigator:} To be completed
+
+\noindent\textbf{Period of Performance:} To be completed
+
+\noindent\textbf{Total Proposed Cost:} See Volume II
+
+\input{sections/01-executive-summary}
+\input{sections/02-technical-objectives}
+\input{sections/03-technical-approach}
+\input{sections/04-work-plan}
+\input{sections/05-deliverables}
+\input{sections/06-team-qualifications}
+\input{sections/07-relevance-to-baa}
+
+\bibliographystyle{ieeetr}
+\bibliography{references}
+
+\end{document}

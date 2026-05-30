@@ -19,7 +19,8 @@ Department of Mechanical and Aerospace Engineering
 
 - `baa-summary.md` - BAA notes and opportunity summary
 - `proposal-outline.md` - Working concept outline
-- `latex/main.tex` - Main LaTeX proposal draft
+- `latex/main.tex` - Combined working LaTeX proposal draft
+- `latex/volume1_technical.tex` - Volume I technical proposal draft
 - `latex/volume2_cost.tex` - Volume II cost proposal draft
 - `latex/sections/` - Section-level LaTeX source files
 - `latex/sections-v2/` - Volume II cost proposal section files
@@ -30,10 +31,10 @@ Department of Mechanical and Aerospace Engineering
 From the `latex/` directory:
 
 ```bash
-pdflatex main.tex
-bibtex main
-pdflatex main.tex
-pdflatex main.tex
+pdflatex volume1_technical.tex
+bibtex volume1_technical
+pdflatex volume1_technical.tex
+pdflatex volume1_technical.tex
 ```
 
 To build Volume II:
