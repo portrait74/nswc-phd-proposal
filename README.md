@@ -19,6 +19,7 @@ Department of Mechanical and Aerospace Engineering
 
 - `baa-summary.md` - BAA notes and opportunity summary
 - `docs/NSWC_PHD-26-S-0001_BAA_ko.md` - Korean working translation of the extracted BAA text
+- `docs/NSWC_PHD-26-S-0001_BAA_ko.pdf` - PDF version of the Korean working translation
 - `proposal-outline.md` - Working concept outline
 - `latex/main.tex` - Combined working LaTeX proposal draft
 - `latex/volume1_technical.tex` - Volume I technical proposal draft
@@ -45,3 +46,14 @@ pdflatex volume2_cost.tex
 ```
 
 The current machine may need a LaTeX distribution such as TeX Live or MiKTeX installed before PDF compilation.
+
+## Korean Translation PDF
+
+The Korean BAA translation PDF can be regenerated with:
+
+```powershell
+$pdfkitRoot = Join-Path $env:TEMP 'openclaw-pdfkit'
+npm install --prefix $pdfkitRoot pdfkit
+$env:PDFKIT_ROOT = $pdfkitRoot
+node .\tools\generate_korean_translation_pdf.js
+```
