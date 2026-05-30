@@ -10,10 +10,41 @@ Personnel management will emphasize clear task ownership, documented technical a
 
 \subsection{Data Management Plan}
 
-The project will generate simulation data, model configuration files, source code, trained reinforcement learning policy artifacts, analysis scripts, figures, and technical reports. Data management will focus on traceability, reproducibility, access control, and appropriate handling of any sponsor-provided or export-controlled information.
+\subsubsection{Roles and Responsibilities}
 
-Project data will be organized by task, scenario, model configuration, and simulation campaign. Each dataset will include sufficient metadata to identify the vehicle model, atmospheric and aerodynamic assumptions, threat scenario, guidance configuration, random seed or dispersion settings, and evaluation metrics. Version control will be used for proposal source files, analysis scripts, non-sensitive documentation, and software components suitable for repository management.
+The PI will hold overall responsibility for the management of data, software, simulation outputs, documentation, and other research products generated during the project. The PI will provide guidance to graduate and undergraduate student researchers on appropriate storage, version control, documentation, protection, archiving, and dissemination practices. The PI will also review any proposed external release of project artifacts to ensure consistency with sponsor requirements, export control obligations, data rights assertions, and applicable CSULB policies.
 
-Any government-furnished information, controlled unclassified information, export-controlled technical data, or sponsor-restricted material will be handled in accordance with applicable sponsor and institutional requirements. Such material will not be placed in public repositories. Publicly shareable materials will be separated from restricted materials, and any release of data, software, or technical reports will be reviewed for compliance with applicable publication, data rights, export control, and award requirements.
+Student researchers will be responsible for maintaining organized task-level records of simulation cases, model assumptions, code changes, training runs, and performance results. The research team will use regular technical meetings to review data quality, identify missing metadata, verify reproducibility of key results, and coordinate preparation of reports and other deliverables.
 
-At the completion of the project, the team will provide the technical reports and other agreed deliverables specified in the award. The final data package, if required, will be organized to support sponsor review of the methods, assumptions, performance results, and transition recommendations.
+\subsubsection{Data Products and Research Outputs}
+
+The project is expected to produce the following categories of data and research outputs:
+
+\begin{itemize}
+  \item Hypersonic glide vehicle trajectory simulation data, including nominal, dispersed, and maximum-threat cases.
+  \item Atmospheric, aerodynamic, vehicle, and threat-model configuration files used to construct the multi-model NPCG ensemble.
+  \item Guidance, navigation, and control source code for baseline NPCG, PIP-aware lateral evasive guidance, multi-model simulation, and reinforcement learning policy training.
+  \item Reinforcement learning training artifacts, including observation and action definitions, reward-function configurations, trained policy checkpoints, validation cases, and performance summaries.
+  \item Analysis scripts, plotting scripts, tables, figures, and statistical summaries used to evaluate terminal accuracy, PIP clearance, bank reversal timing, time-of-flight variation, robustness, and computational cost.
+  \item Technical documentation, including README files, software usage notes, model assumptions, installation instructions, and final technical reports.
+\end{itemize}
+
+\subsubsection{Data and Metadata Standards}
+
+Source code may be developed in MATLAB/Simulink, Python, Julia, C/C++, or other appropriate engineering and scientific computing environments. Documentation will be maintained in plain text, Markdown, and \LaTeX{} formats, as appropriate. Version control will be used for source code, documentation, analysis scripts, and non-sensitive configuration files suitable for repository management.
+
+Simulation datasets will be organized by task, scenario, model configuration, and simulation campaign. Each dataset will include sufficient metadata to identify the vehicle model, atmospheric and aerodynamic assumptions, guidance mode, threat scenario, PIP-generation logic, sensor or navigation assumptions, random seed or dispersion settings, software version, date of generation, and evaluation metrics. This metadata will support reproducibility and enable comparison across baseline NPCG, multi-model NPCG, and RL-augmented guidance cases.
+
+\subsubsection{Archiving, Access, and Dissemination}
+
+During the project, data and software artifacts will be maintained in controlled project repositories and backed up using university-managed or PI-managed storage resources. Internal repositories will be used for active development, simulation campaigns, and draft analysis products. Public release of project materials will occur only after review for sponsor restrictions, data rights, export control, publication constraints, and institutional requirements.
+
+Where permitted, non-sensitive research products such as publications, approved figures, documentation, and reproducibility artifacts may be released through public repositories such as GitHub, CSULB-affiliated web pages, or institutional repositories. Materials involving government-furnished information, controlled unclassified information, export-controlled technical data, sponsor-restricted assumptions, or proprietary third-party inputs will not be placed in public repositories.
+
+\subsubsection{Long-Term Preservation}
+
+Final technical reports and agreed deliverables will be provided in accordance with the award requirements. Publicly releasable versions of code, data summaries, documentation, and publications will be retained in appropriate institutional or public repositories when allowed. Project records supporting final results will be retained by the PI for a period consistent with CSULB policy, sponsor requirements, and applicable federal award regulations.
+
+\subsubsection{Restricted Data and Export Control Considerations}
+
+Some hypersonic guidance and validation topics may involve export-controlled technologies or other sponsor-restricted information. The project team will separate publicly releasable materials from restricted materials and will apply access controls as required. Any release of data, software, trained policies, technical reports, or related materials will be reviewed before dissemination to ensure compliance with applicable publication, data rights, export control, and award requirements.
