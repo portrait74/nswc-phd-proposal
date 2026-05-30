@@ -15,7 +15,7 @@ Department of Mechanical and Aerospace Engineering
 
 ## Core Proposal Concept
 
-CSULB's Department of Mechanical and Aerospace Engineering will develop, extend, and validate reinforcement learning-augmented predictive guidance algorithms for hypersonic glide vehicles operating in dynamic threat environments. The proposed research will build on David D. Lee's prior work on model-based numerical predictor-corrector guidance (NPCG) and predictive lateral evasive maneuver guidance for avoiding Predicted Intercept Points (PIPs).
+CSULB's Department of Mechanical and Aerospace Engineering will develop, extend, and validate reinforcement learning-augmented predictive guidance algorithms for hypersonic glide vehicles operating in dynamic threat environments. The proposed research will build on David Daeyoung Lee's prior work on model-based numerical predictor-corrector guidance (NPCG) and predictive lateral evasive maneuver guidance for avoiding Predicted Intercept Points (PIPs).
 
 The proposed research will address two limitations of purely model-based NPCG: sensitivity to atmospheric and aerodynamic model uncertainty, and computational burden associated with continuous onboard prediction and correction. The effort will develop multiple NPCG models under different atmospheric, aerodynamic, and threat assumptions, generate guidance behavior across dispersed scenarios, and train a reinforcement learning (RL) agent to perform adaptive guidance using sensor-informed state observations.
 
@@ -94,7 +94,7 @@ There is a need for validated guidance methods that retain the physical interpre
 
 ## Draft Public-Sector Style Summary
 
-본 제안은 California State University, Long Beach (CSULB) Mechanical and Aerospace Engineering 학과를 제안기관으로 하여, 극초음속 활공체(Hypersonic Glide Vehicle)의 동적 위협 회피 및 예측 유도기술을 고도화하는 것을 목표로 한다. 제안 기술은 David D. Lee가 수행한 model-based numerical predictor-corrector guidance(NPCG) 및 Predicted Intercept Point(PIP) 회피 기반 예측 횡방향 기동 유도법을 핵심 선행기술로 활용한다.
+본 제안은 California State University, Long Beach (CSULB) Mechanical and Aerospace Engineering 학과를 제안기관으로 하여, 극초음속 활공체(Hypersonic Glide Vehicle)의 동적 위협 회피 및 예측 유도기술을 고도화하는 것을 목표로 한다. 제안 기술은 David Daeyoung Lee가 수행한 model-based numerical predictor-corrector guidance(NPCG) 및 Predicted Intercept Point(PIP) 회피 기반 예측 횡방향 기동 유도법을 핵심 선행기술로 활용한다.
 
 기존 NPCG 방식은 물리 기반 예측과 보정을 통해 높은 종말 정확도를 제공할 수 있으나, 대기 모델 및 공력 모델의 불확실성이 존재할 경우 예측 정확도가 저하될 수 있으며, 지속적인 궤적 예측·보정 과정으로 인해 탑재 컴퓨터의 계산부하가 증가할 수 있다. 본 연구는 이러한 한계를 보완하기 위해 서로 다른 대기·공력·위협 조건을 반영한 복수의 NPCG 모델을 구축하고, 그 결과를 기반으로 reinforcement learning(RL) agent를 학습시켜 센서 데이터와 비행 상태에 따라 적응적으로 유도 명령을 산출하는 방법을 연구한다.
 
@@ -104,7 +104,7 @@ There is a need for validated guidance methods that retain the physical interpre
 
 California State University, Long Beach (CSULB), through the Department of Mechanical and Aerospace Engineering, proposes to develop and validate reinforcement learning-augmented multi-model predictive guidance algorithms for hypersonic glide vehicles operating in dynamic threat environments. The proposed research directly supports the NSWC PHD interest in hypersonic development, guidance, navigation and control systems optimized for hypersonic flight, computational modeling, and validation of advanced hypersonic technologies.
 
-The proposed effort builds on prior CSULB-led research by David D. Lee on model-based numerical predictor-corrector guidance and predictive lateral evasive maneuver guidance for hypersonic glide vehicles capable of avoiding Predicted Intercept Points (PIPs). Unlike conventional no-fly-zone avoidance problems, PIPs are small, continuously updated, and distributed along the vehicle's flight path. This creates a need for online guidance logic that can rapidly evaluate candidate maneuvers, maximize clearance from imminent intercept opportunities, and preserve terminal targeting performance.
+The proposed effort builds on prior CSULB-led research by David Daeyoung Lee on model-based numerical predictor-corrector guidance and predictive lateral evasive maneuver guidance for hypersonic glide vehicles capable of avoiding Predicted Intercept Points (PIPs). Unlike conventional no-fly-zone avoidance problems, PIPs are small, continuously updated, and distributed along the vehicle's flight path. This creates a need for online guidance logic that can rapidly evaluate candidate maneuvers, maximize clearance from imminent intercept opportunities, and preserve terminal targeting performance.
 
 Although model-based numerical predictor-corrector guidance can provide accurate entry targeting, it can be sensitive to atmospheric, aerodynamic, and vehicle-model uncertainty. It may also require substantial onboard computation because the guidance computer must repeatedly predict and correct future trajectories during flight. This research will address these limitations by developing multiple NPCG models under different uncertainty assumptions and using their results to train a reinforcement learning agent. The trained RL agent will use sensor-informed state data to perform adaptive guidance actions, seeking to preserve the targeting discipline of physics-based NPCG while improving robustness and real-time computational feasibility.
 
@@ -112,7 +112,7 @@ The research will evaluate baseline NPCG, multi-model NPCG, and RL-augmented gui
 
 ## Open Items for David
 
-- Confirm exact PI name, title, and contact information
+- Confirm PI title and contact information
 - Confirm whether the attached paper is published, submitted, or in preparation
 - Add citation details for the PIP avoidance paper
 - Identify available codebase, simulation tools, and vehicle models from the paper
