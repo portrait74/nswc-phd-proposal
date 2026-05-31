@@ -2,18 +2,18 @@
 
 \subsection{Baseline Model-Based Guidance}
 
-The effort will begin by establishing a baseline numerical predictor-corrector guidance architecture for longitudinal range control and predictive lateral bank reversal logic for crossrange and threat-avoidance maneuvering. This baseline will reproduce the key elements of the prior PIP-aware evasive maneuver guidance approach and will serve as the reference case for evaluating robustness, computational cost, and terminal performance.
+The effort will begin by establishing a baseline numerical predictor-corrector guidance architecture for longitudinal range control and predictive lateral bank reversal logic for crossrange and threat-avoidance maneuvering. This baseline NPCG implementation will act as the physics-based expert guidance generator. It will reproduce the key elements of the prior PIP-aware evasive maneuver guidance approach and will serve as the reference case for evaluating robustness, computational cost, and terminal performance.
 
 \subsection{Multi-Model NPCG Ensemble}
 
-Multiple NPCG variants will be developed to represent dispersed atmospheric, aerodynamic, vehicle, and threat-model assumptions. These models will be used to generate trajectory and guidance-response datasets across nominal, dispersed, and maximum-threat scenarios. The ensemble will also quantify the sensitivity of PIP avoidance and terminal targeting performance to model mismatch.
+Multiple NPCG variants will be developed to represent dispersed atmospheric, weather-driven, aerodynamic, vehicle, and threat-model assumptions. For each uncertainty case, NPCG will be used to compute ideal or expert guidance histories, including predicted trajectories, correction commands, bank-reversal decisions, and terminal targeting outcomes. These outputs will form the core training dataset for the RL agent and will also quantify the sensitivity of PIP avoidance and terminal targeting performance to model mismatch.
 
 \subsection{Reinforcement Learning Guidance Agent}
 
-An RL agent will be trained using outputs from the multi-model NPCG ensemble and simulated sensor-informed vehicle states. Candidate observations may include vehicle position, velocity, flight path angle, heading, bank state, energy-like variables, target-relative geometry, PIP-relative geometry, and uncertainty indicators. Candidate actions may include bank sign selection, bank reversal timing, or bounded bank command adjustment.
+An RL agent will be trained using the NPCG-generated expert guidance histories and simulated sensor-informed vehicle states. Candidate observations may include vehicle position, velocity, flight path angle, heading, bank state, energy-like variables, target-relative geometry, PIP-relative geometry, atmospheric or weather uncertainty indicators, and navigation uncertainty indicators. Candidate actions may include bank sign selection, bank reversal timing, or bounded bank command adjustment.
 
-The reward function will balance terminal accuracy, minimum PIP clearance, control effort, bank reversal frequency, and computational efficiency. The design objective is not to replace physics-based guidance discipline, but to distill multi-model NPCG behavior into an adaptive policy that can respond rapidly to sensor-informed state information.
+The reward function will balance agreement with NPCG expert behavior, terminal accuracy, minimum PIP clearance, control effort, bank reversal frequency, and computational efficiency. The design objective is not to replace physics-based guidance discipline, but to distill multi-model NPCG behavior into an adaptive policy that can respond rapidly to sensor-informed state information.
 
 \subsection{Simulation and Robustness Evaluation}
 
-The guidance framework will be evaluated through high-fidelity numerical simulation under variations in atmospheric density, aerodynamic coefficients, vehicle properties, threat update timing, guidance cycle rate, and navigation uncertainty. Performance will be compared across baseline NPCG, multi-model NPCG, and RL-augmented guidance.
+The guidance framework will be evaluated through high-fidelity numerical simulation under variations in atmospheric density, weather-related disturbance assumptions, aerodynamic coefficients, vehicle properties, threat update timing, guidance cycle rate, and navigation uncertainty. Performance will be compared across baseline NPCG, multi-model NPCG expert guidance, and RL-augmented guidance.
